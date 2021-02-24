@@ -1,0 +1,116 @@
+ANSWERS
+***Answer 29:
+aplusb.c:1:6: error: return type of 'main' is not 'int' [-Werror=main]
+    1 | void main()
+      |      ^~~~
+aplusb.c: In function 'main':
+aplusb.c:4:1: error: implicit declaration of function 'scanf' [-Werror=implicit-function-declaration]
+    4 | scanf("%d%d", a, &b);
+      | ^~~~~
+aplusb.c:4:1: error: incompatible implicit declaration of built-in function 'scanf' [-Werror]
+aplusb.c:1:1: note: include '<stdio.h>' or provide a declaration of 'scanf'
+  +++ |+#include <stdio.h>
+    1 | void main()
+aplusb.c:4:9: error: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Werror=format=]
+    4 | scanf("%d%d", a, &b);
+      |        ~^     ~
+      |         |     |
+      |         int * int
+aplusb.c:5:3: error: statement with no effect [-Werror=unused-value]
+    5 | c == a + b;
+      | ~~^~~~~~~~
+aplusb.c:6:1: error: implicit declaration of function 'printf' [-Werror=implicit-function-declaration]
+    6 | printf("%d\n", c);
+      | ^~~~~~
+aplusb.c:6:1: error: incompatible implicit declaration of built-in function 'printf' [-Werror]
+aplusb.c:6:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+aplusb.c:4:1: error: 'a' is used uninitialized in this function [-Werror=uninitialized]
+    4 | scanf("%d%d", a, &b);
+      | ^~~~~~~~~~~~~~~~~~~~
+aplusb.c:6:1: error: 'c' is used uninitialized in this function [-Werror=uninitialized]
+    6 | printf("%d\n", c);
+      | ^~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+***Answer 30:
+-rwxr-xr-x  1 s02190162  Domain Admins  7848 14 сент. 20:12 aplusb
+***Answer 31:
+35443
+***Answer 32:
+./aplusb < 001.dat > 001.res
+***Answer 33:
+37958
+***Answer 34:
+user	0m0,000s
+***Answer 35:
+450000000
+***Answer 36:
+перечень всех процессов, которые запущены на сервере и содержащих слово "sh"
+***Answer 37:
+ulimit -c - Ограничивает размер файла ядра
+ulimit -c 0 - установит размер файлов ядра на 0
+***Answer 38:
+There are 26 section headers, starting at offset 0x1550:
+
+Section Headers:
+  [Nr] Name              Type             Address           Offset
+       Size              EntSize          Flags  Link  Info  Align
+  [ 0]                   NULL             0000000000000000  00000000
+       0000000000000000  0000000000000000           0     0     0
+  [ 1] .interp           PROGBITS         0000000000400200  00000200
+       0000000000000015  0000000000000000   A       0     0     1
+  [ 2] .note.tag         NOTE             0000000000400218  00000218
+       0000000000000030  0000000000000000   A       0     0     4
+  [ 3] .hash             HASH             0000000000400248  00000248
+       0000000000000030  0000000000000004   A       4     0     8
+  [ 4] .dynsym           DYNSYM           0000000000400278  00000278
+       00000000000000a8  0000000000000018   A       5     1     8
+  [ 5] .dynstr           STRTAB           0000000000400320  00000320
+       000000000000003d  0000000000000000   A       0     0     1
+  [ 6] .gnu.version      SUNW_versym      000000000040035e  0000035e
+       000000000000000e  0000000000000002   A       4     0     2
+  [ 7] .gnu.version_r    SUNW_verneed     0000000000400370  00000370
+       0000000000000020  0000000000000000   A       5     1     8
+  [ 8] .rela.plt         RELA             0000000000400390  00000390
+       0000000000000048  0000000000000018  AI       4    19     8
+  [ 9] .init             PROGBITS         00000000004003d8  000003d8
+       0000000000000013  0000000000000000  AX       0     0     4
+  [10] .plt              PROGBITS         00000000004003f0  000003f0
+       0000000000000040  0000000000000010  AX       0     0     16
+  [11] .text             PROGBITS         0000000000400430  00000430
+       0000000000000384  0000000000000000  AX       0     0     16
+  [12] .fini             PROGBITS         00000000004007b4  000007b4
+       000000000000000e  0000000000000000  AX       0     0     4
+  [13] .rodata           PROGBITS         00000000004007c2  000007c2
+       0000000000000001  0000000000000001 AMS       0     0     1
+  [14] .eh_frame_hdr     PROGBITS         00000000004007c4  000007c4
+       000000000000001c  0000000000000000   A       0     0     4
+  [15] .eh_frame         PROGBITS         00000000004007e0  000007e0
+       0000000000000064  0000000000000000   A       0     0     8
+  [16] .ctors            PROGBITS         0000000000600848  00000848
+       0000000000000010  0000000000000000  WA       0     0     8
+  [17] .dtors            PROGBITS         0000000000600858  00000858
+       0000000000000010  0000000000000000  WA       0     0     8
+  [18] .dynamic          DYNAMIC          0000000000600868  00000868
+       0000000000000160  0000000000000010  WA       5     0     8
+  [19] .got.plt          PROGBITS         00000000006009c8  000009c8
+       0000000000000030  0000000000000008  WA       0     0     8
+  [20] .data             PROGBITS         00000000006009f8  000009f8
+       0000000000000010  0000000000000000  WA       0     0     8
+  [21] .bss              NOBITS           0000000000600a08  00000a08
+       0000000000000018  0000000000000000  WA       0     0     8
+  [22] .comment          PROGBITS         0000000000000000  00000a08
+       000000000000021d  0000000000000001  MS       0     0     1
+  [23] .symtab           SYMTAB           0000000000000000  00000c28
+       0000000000000648  0000000000000018          24    52     8
+  [24] .strtab           STRTAB           0000000000000000  00001270
+       000000000000020b  0000000000000000           0     0     1
+  [25] .shstrtab         STRTAB           0000000000000000  0000147b
+       00000000000000cf  0000000000000000           0     0     1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings)
+  I (info), L (link order), G (group), x (unknown)
+  O (extra OS processing required) o (OS specific), p (processor specific)
+***Answer 39:
+cat /usr/share/dict/words ls -Srl /etc | grep .conf | head -5
+***Answer 40:
+cat /usr/share/dict/words | grep -v a | grep -v e | grep -v i | grep -v o | grep -v u | wc -w

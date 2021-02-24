@@ -1,0 +1,35 @@
+ANSWERS
+***Answer 17:
+полный путь домашнего каталога
+/home/s02190162
+***Answer 18:
+/usr/include
+***Answer 19:
+время создания каталога
+755
+***Answer 20:
+38 byte
+1 /home/s02190162 2 /home/s02190162 3
+***Answer 21:
+/etc/crontab
+***Answer 22:
+total 4
+-rwxr-xr--  1 s02190162  Domain Admins  1090 14 сент. 18:13 hosts
+-rwxr-xr--  1 s02190162  Domain Admins  2515 14 сент. 18:13 passwd
+***Answer 23:
+total 4
+-rwxr-xr--  1 s02190162  Domain Admins  1090 14 сент. 18:13 hosts2
+-rwxr-xr--  1 s02190162  Domain Admins  2515 14 сент. 18:13 passwd
+***Answer 24:
+UID=27595
+USER=s02190162
+***Answer 25:
+/usr/local/bin/bash
+***Answer 26:
+”/etc:/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/home/s02190162/bin:/usr/include”
+***Answer 27:
+/usr/bin
+***Answer 28:
+ls /123 с кодом 1
+ls /home с кодом 0
+(stdin)= 30440220462d7ae1a10d350371471f18a0ba3f94c1004fefa4046d8dcc228e9a1b6b7aca0220736033064a4ac10cbd9385ad59eb161ad87b95ad81b126f7d43d89d46e9b718e
